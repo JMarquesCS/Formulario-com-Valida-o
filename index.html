@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Formulário</h1>
+        <form id="form">
+            <div>
+                <input type="text" class="inputs required" placeholder="Digite seu nome" oninput="nameValidate()" >
+                <span class="span-requerid">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+            <div>
+                <input type="email" class="inputs required" placeholder="Digite seu e-mail" oninput="emailValidate()">
+                <span class="span-requerid">Digite um e-mail válido</span>
+            </div>
+            <div>
+                <input type="password" class="inputs required" placeholder="Digite sua senha" oninput="senhaValidate()">
+                <span class="span-requerid">Digite uma senha com no mínimo 8 caracteres</span>
+            </div>
+            <div>
+                <input type="password" class="inputs required" placeholder="Confirme sua senha" oninput="senhaConfirma()">
+                <span class="span-requerid">Senhas devem ser compatíveis</span>
+            </div>
+            <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10" placeholder="Fale um pouco sobre você..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        </div>
+</body>
+<script src="js/scripts.js"></script>
+</html>
